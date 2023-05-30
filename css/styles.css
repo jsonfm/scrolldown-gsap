@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+
+}
+
+html, body {
+    background: #101010;
+}
+
+header {
+ position: fixed;
+ top: 0%;
+ left: 0%;
+ width: 100%;
+ height: 10rem;   
+ z-index: 10000;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav p {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.section .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.section .heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    z-index: 10000;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: "Helveltica";
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        height: 6rem;
+    }
+    header nav p {
+        font-size: 1.2rem;
+    }
+
+    .section .heading {
+        font-size: 2rem;
+    }
+}
